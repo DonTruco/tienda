@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <!--Agregar el icono de la pagina-->
+    <!--Concretar el nombre-->
+    <title>{Tienda}</title>
+</head>
+<body>
+    <!--MENU-->
+    <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Novedades</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      
+    <!--PRODUCTOS-->
+    <section id="productos">
+        <!--Primer producto-->
+        <div class="container">
+          <h2 class="section-title">Nuestros productos</h2>
+          <div class="product-card">
+            <img src="img/iphone-12.png" alt="iPhone 12" class="product-image">
+            <h3 class="product-title">iPhone 12</h3>
+            <p class="product-description">El último modelo de iPhone con pantalla OLED de 6.1 pulgadas y cámara de 12 megapíxeles.</p>
+            <p class="product-price">$999</p>
+            <a href="#" class="btn-comprar">Comprar ahora</a>
+          </div>
+          <!--Segundo producto-->
+          <div class="product-card">
+            <img src="img/samsung-galaxy-s21.png" alt="Samsung Galaxy S21" class="product-image">
+            <h3 class="product-title">Samsung Galaxy S21</h3>
+            <p class="product-description">El teléfono insignia de Samsung con pantalla AMOLED de 6.2 pulgadas y cámara de 64 megapíxeles.</p>
+            <p class="product-price">$899</p>
+            <a href="#" class="btn-comprar">Comprar ahora</a>
+          </div>
+          <!--Tercer producto-->
+          <div class="product-card">
+            <img src="img/google-pixel-5.png" alt="Google Pixel 5" class="product-image">
+            <h3 class="product-title">Google Pixel 5</h3>
+            <p class="product-description">El teléfono inteligente de Google con pantalla OLED de 6 pulgadas y cámara de 12.2 megapíxeles.</p>
+            <p class="product-price">$699</p>
+            <a href="#" class="btn-comprar">Comprar ahora</a>
+          </div>
+        </div>
+        <!--SI ES NECESARIO AGREGAR MAS PRODUCTOS, VIDEOS Y MAS RECURSOS VISUALES-->
+      </section>
+
+    <!--Seccion para NOVEDADES-->  
+    <section id="novedades">
+        <h2>Novedades</h2>
+        <!--Contenedor de articulos-->
+        <div class="articulos">
+            <!--Primer articulo-->
+            <article>
+                <img src="imagen1.jpg" alt="Imagen del artículo">
+                    <h3>Artículo 1</h3>
+                    <p>Descripción del artículo.</p>
+                    <a href="#">Leer más</a>
+            </article>
+
+            <!--Segundo articulo-->
+            <article>
+                <img src="imagen2.jpg" alt="Imagen del artículo">
+                    <h3>Artículo 2</h3>
+                    <p>Descripción del artículo.</p>
+                    <a href="#">Leer más</a>
+            </article>
+            <!--Tercer articulo-->
+            <article>
+                <img src="imagen3.jpg" alt="Imagen del artículo">
+                    <h3>Artículo 3</h3>
+                    <p>Descripción del artículo.</p>
+                    <a href="#">Leer más</a>
+            </article>
+        </div>
+      </section>
+
+    <!--Seccion de NOSOTROS-->  
+    <section id="nosotros">
+        <!--Contenedor para NOSOTROS-->
+        <div class="container">
+          <h2>Nuestra historia</h2>
+          <p>En nuestra tienda de celulares, nos dedicamos a ofrecer productos y servicios de alta calidad desde hace más de 10 años. Comenzamos como una pequeña empresa local y, gracias al compromiso con nuestros clientes y a nuestra pasión por la tecnología móvil, hemos crecido y nos hemos expandido a nivel nacional.</p>
+          <!--mision-->
+          <h2>Nuestra misión</h2>
+          <p>En nuestra tienda de celulares, nos dedicamos a ofrecer productos y servicios de alta calidad que satisfagan las necesidades y expectativas de nuestros clientes. Nos esforzamos por ser líderes en el mercado de la tecnología móvil, brindando soluciones innovadoras y eficientes que mejoren la vida de las personas.</p>
+          <!--vision-->
+          <h2>Nuestra visión</h2>
+          <p>Queremos ser la tienda de celulares más innovadora y exitosa en el mercado, reconocida por ofrecer la mejor experiencia de compra y servicio al cliente. Nos esforzamos por ser líderes en la implementación de tecnología de vanguardia y en la innovación de soluciones móviles para nuestros clientes. Queremos ser una empresa que contribuya al desarrollo y crecimiento de la sociedad, siendo un modelo de éxito empresarial y responsabilidad social.</p>
+        </div>
+      </section>
+
+    <br>  
+
+    <!--Seccion para Contacto-->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <!--Email a donde se enviaran sugerencias y comentarios-->
+        <form action="mailto:correo@tutienda.com" method="post" enctype="text/plain">
+            <!--nombre-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <!--Correo-->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <!--Asunto-->
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+            <!--Mensaje-->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <!--Enviar-->
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
